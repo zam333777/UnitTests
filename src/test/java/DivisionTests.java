@@ -65,7 +65,7 @@ public class DivisionTests {
     String [] WrongValues = new String[]{"sdf", " ", "/1", "апова", "*1", "--1" };
     for (int i = 0; i < WrongValues.length; i++){
       boolean y = false;
-    try{ Double x = new Double("abcd");
+    try{ Double x = new Double(WrongValues[i]);
       Division.Division(x);
     }
     catch (NumberFormatException e){
